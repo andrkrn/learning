@@ -1,13 +1,12 @@
-package main
+package helloworld
 
-import "fmt"
+const (
+	// Hello in english
+	helloEn = "Hello, "
 
-const helloEn = "Hello, "
-const helloId = "Hai, "
-
-func main() {
-	fmt.Println(Hello("world!", ""))
-}
+	// Hello in indonesian
+	helloId = "Hai, "
+)
 
 func Hello(n string, lang string) string {
 	if n == "" {
@@ -17,6 +16,7 @@ func Hello(n string, lang string) string {
 	return Greeting(lang) + n
 }
 
+// Get greeting for selected languange
 func Greeting(lang string) string {
 	switch lang {
 	case "id":
