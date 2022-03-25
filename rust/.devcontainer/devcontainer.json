@@ -1,0 +1,11 @@
+{
+  "name": "Learning - Rust",
+  "build": {
+    "dockerfile": "Dockerfile",
+  },
+  "settings": {
+  },
+  "extensions": [
+		"rust-lang.rust"
+	],
+}
